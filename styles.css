@@ -13,6 +13,7 @@
   --color-yellow: #ffad5a;
   --color-text: #3e3e3e;
   --color-pink: #ff5959;
+  --color-pink-dark: #f33f3f;
 }
 
 /****** Global Styles ******/
@@ -40,6 +41,12 @@ body {
   color: white;
   padding: 15px 25px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s background-color ease;
+}
+
+.btn:hover {
+  background-color: var(--color-pink-dark);
 }
 
 .section__title-big {
