@@ -86,6 +86,7 @@ body {
 
 /****** Section Styles ******/
 
+/* Focus section */
 .focused__left {
   width: 50%;
 }
@@ -126,6 +127,8 @@ body {
   object-fit: contain;
 }
 
+/* Mission Section */
+
 .mission__card-img {
   width: 40%;
   object-fit: contain;
@@ -158,6 +161,8 @@ body {
   background-color: #fff4d6;
 }
 
+/* Develop Section */
+
 .develop {
   background-image: url(/images/shapes/shape-1.png);
   background-position: 0% 40%;
@@ -165,17 +170,17 @@ body {
   background-repeat: no-repeat;
 }
 
-.develop__left,
-.skills__left {
+.develop__left {
   width: 40%;
   text-align: right;
 }
 
-.develop__right,
-.skills__right {
+.develop__right {
   width: 60%;
   padding-left: 70px;
 }
+
+/* Community Section */
 
 .community {
   background-image: url(/images/shapes/shape-1.png);
@@ -192,6 +197,45 @@ body {
 .community__right {
   width: 40%;
 }
+
+/* Skills Section */
+
+.skills__description {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.skills__wrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__card {
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+  flex: 1 0 17%;
+}
+
+.skills__card-img img {
+  width: 40%;
+}
+
+.skills__card-title {
+  color: var(--color-black);
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Footer Section */
 
 footer {
   background-color: black;
