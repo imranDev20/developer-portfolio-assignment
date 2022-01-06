@@ -7,8 +7,10 @@
 :root {
   --title-font: "Yeseva One", cursive;
   --secondary-font: "Poppins", sans-serif;
-  --section-margin-top: 100px;
-  --section-margin-bottom: 100px;
+  --section-margin-top: 50px;
+  --section-margin-bottom: 50px;
+  --section-padding-top: 50px;
+  --section-padding-bottom: 50px;
   --color-black: #333333;
   --color-yellow: #ffad5a;
   --color-text: #3e3e3e;
@@ -28,6 +30,9 @@ body {
   margin-right: auto;
   margin-top: var(--section-margin-top);
   margin-bottom: var(--section-margin-bottom);
+
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
 }
 
 .yellow {
@@ -69,12 +74,17 @@ body {
   padding-right: 140px;
 }
 
-/****** Section Styles ******/
+.section__img {
+  width: 80%;
+  object-fit: contain;
+}
 
-.focused {
+.flex {
   display: flex;
   align-items: center;
 }
+
+/****** Section Styles ******/
 
 .focused__left {
   width: 50%;
@@ -91,16 +101,15 @@ body {
 .focused__title::before {
   content: "";
   position: absolute;
-  height: 85%;
+  height: 82%;
   width: 5px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--color-pink);
+  border-radius: 10px;
 }
 
-.focused__description {
-}
 .focused__bottom-text {
   margin-top: 15px;
   color: var(--color-text);
@@ -115,15 +124,6 @@ body {
 .focused__right img {
   width: 70%;
   object-fit: contain;
-}
-
-.mission {
-  margin-top: var(--section-margin-top);
-  margin-bottom: var(--section-margin-bottom);
-}
-
-.mission__cards-holder {
-  display: flex;
 }
 
 .mission__card-img {
@@ -159,28 +159,29 @@ body {
 }
 
 .develop {
-  display: flex;
-  align-items: center;
+  background-image: url(/images/shapes/shape-1.png);
+  background-position: 0% 40%;
+  background-size: 170px;
+  background-repeat: no-repeat;
 }
 
-.develop__left {
+.develop__left,
+.skills__left {
   width: 40%;
+  text-align: right;
 }
 
-.develop__right {
+.develop__right,
+.skills__right {
   width: 60%;
   padding-left: 70px;
 }
 
-.develop__left img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 .community {
-  display: flex;
-  align-items: center;
+  background-image: url(/images/shapes/shape-1.png);
+  background-position: 98% 100%;
+  background-size: 170px;
+  background-repeat: no-repeat;
 }
 
 .community__left {
@@ -192,16 +193,23 @@ body {
   width: 40%;
 }
 
-.community__right img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 footer {
-  background-color: var(--color-black);
+  background-color: black;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
   color: white;
+}
+
+footer h2 {
+  font-family: "Lobster", cursive;
+  font-size: 36px;
+}
+
+footer span {
+  color: var(--color-pink);
+}
+
+footer small {
+  color: lightgray;
 }
