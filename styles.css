@@ -164,7 +164,7 @@ body {
 /* Develop Section */
 
 .develop {
-  background-image: url(images/shapes/shape-1.png);
+  background-image: url("images/shapes/shape-1.png");
   background-position: 0% 40%;
   background-size: 170px;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@ body {
 /* Community Section */
 
 .community {
-  background-image: url(images/shapes/shape-1.png);
+  background-image: url("images/shapes/shape-1.png");
   background-position: 98% 100%;
   background-size: 170px;
   background-repeat: no-repeat;
